@@ -1,0 +1,20 @@
+<mvc:View controllerName="my.app.pro03jsondata.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox width="100%" direction="Column" id="vbox1">
+                <Label id="l1" text="single binding"/>
+                <Text id="t2" text="{/1}"/>
+                <Text id="t3" text="{/2}"/>
+                <Text id="t4" text="{/3}"/>
+            </VBox>
+            <VBox width="100%" direction="Column" id="vbox2">
+                <Label id="l2" text="reference Binding"/>
+                <Text id="t5" text="{test>/1}"/>
+                <Text id="t6" text="{test>/2}"/>
+                <Text id="t7" text="{test>/3}"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
